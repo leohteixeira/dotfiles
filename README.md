@@ -70,13 +70,13 @@ Once you have it installed, you have to configure your terminal applications to 
 You can use the [convenience script](./clone_and_install.sh) to install the dotfiles pretty quickly, and it will install Git in case you don't have it already. Simply run the following command in your terminal:
 
 ```bash
-sh -c "$(wget -qO- https://git.io/leohteixeira-dotfiles)"
+sh -c "$(wget -qO- https://raw.githubusercontent.com/<leohteixeira>/dotfiles/master/scripts/install_dotfiles.sh)"
 ```
 
 > 💡 We use `wget` here because it comes preinstalled with most of the Ubuntu versions. But you can also use `curl`:
 >
 > ```bash
->  sh -c "$(curl -fsSL https://git.io/leohteixeira-dotfiles)"
+>  sh -c "$(curl -fsSL https://raw.githubusercontent.com/<leohteixeira>/dotfiles/master/scripts/install_dotfiles.sh)"
 > ```
 
 **If you followed these steps so far, that means you finished installing the dotfiles already. Have fun!**
@@ -96,7 +96,7 @@ The convenience script supports some environment variables:
 For example, you can use it to clone the dotfiles repository on branch `beta` with:
 
 ```bash
-DOTFILES_BRANCH=beta sh -c "$(wget -qO- https://git.io/leohteixeira-dotfiles)"
+DOTFILES_BRANCH=beta sh -c "$(wget -qO- https://raw.githubusercontent.com/<leohteixeira>/dotfiles/master/scripts/install_dotfiles.sh)"
 ```
 
 ### Install the dotfiles manually
