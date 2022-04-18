@@ -1,6 +1,6 @@
 # Felipe Santos' dotfiles <!-- omit in toc -->
 
-[![Gitpod ready-to-code](https://img.shields.io/badge/Gitpod-ready--to--code-blue?logo=gitpod)](https://gitpod.io/#https://github.com/felipecrs/dotfiles#scripts)
+[![Gitpod ready-to-code](https://img.shields.io/badge/Gitpod-ready--to--code-blue?logo=gitpod)](https://gitpod.io/#https://github.com/leohteixeira/dotfiles#scripts)
 
 Bootstrap your Ubuntu in a few minutes!
 
@@ -70,13 +70,13 @@ Once you have it installed, you have to configure your terminal applications to 
 You can use the [convenience script](./clone_and_install.sh) to install the dotfiles pretty quickly, and it will install Git in case you don't have it already. Simply run the following command in your terminal:
 
 ```bash
-sh -c "$(wget -qO- https://git.io/felipecrs-dotfiles)"
+sh -c "$(wget -qO- https://git.io/leohteixeira-dotfiles)"
 ```
 
 > 💡 We use `wget` here because it comes preinstalled with most of the Ubuntu versions. But you can also use `curl`:
 >
 > ```bash
->  sh -c "$(curl -fsSL https://git.io/felipecrs-dotfiles)"
+>  sh -c "$(curl -fsSL https://git.io/leohteixeira-dotfiles)"
 > ```
 
 **If you followed these steps so far, that means you finished installing the dotfiles already. Have fun!**
@@ -90,13 +90,13 @@ The previous step used the [convenience script](./clone_and_install.sh) to insta
 The convenience script supports some environment variables:
 
 - `DOTFILES_REPO_HOST`: Default to `https://github.com`.
-- `DOTFILES_USER`: Default to `felipecrs`.
+- `DOTFILES_USER`: Default to `leohteixeira`.
 - `DOTFILES_BRANCH`: Default to `master`.
 
 For example, you can use it to clone the dotfiles repository on branch `beta` with:
 
 ```bash
-DOTFILES_BRANCH=beta sh -c "$(wget -qO- https://git.io/felipecrs-dotfiles)"
+DOTFILES_BRANCH=beta sh -c "$(wget -qO- https://git.io/leohteixeira-dotfiles)"
 ```
 
 ### Install the dotfiles manually
@@ -104,7 +104,7 @@ DOTFILES_BRANCH=beta sh -c "$(wget -qO- https://git.io/felipecrs-dotfiles)"
 If you prefer not to use the convenience script to install the dotfiles, you can also do it manually:
 
 ```bash
-git clone https://github.com/felipecrs/dotfiles "$HOME/.dotfiles"
+git clone https://github.com/leohteixeira/dotfiles "$HOME/.dotfiles"
 "$HOME/.dotfiles/install"
 ```
 
@@ -113,9 +113,9 @@ git clone https://github.com/felipecrs/dotfiles "$HOME/.dotfiles"
 If you are forking this repository, you'll have to edit the following areas:
 
 - [`README.md`](./README.md)
-  - Change `https://git.io/felipecrs-dotfiles` to `https://raw.githubusercontent.com/<your-username>/dotfiles/master/scripts/install_dotfiles.sh`
+  - Change `https://git.io/leohteixeira-dotfiles` to `https://raw.githubusercontent.com/<your-username>/dotfiles/master/scripts/install_dotfiles.sh`
 - [`scripts/install_dotfiles.sh`](./scripts/install_dotfiles.sh)
-  - Change `felipecrs` to `<your-username>`
+  - Change `leohteixeira` to `<your-username>`
 - [`.chezmoi.toml.tmpl`](./.chezmoi.toml.tmpl)
   - Change personal and work name and email to yours.
 
@@ -130,13 +130,13 @@ There are some scripts here to help you automate tricky activities when setting 
 If you already have this dotfiles [installed](#get-started), you can use the scripts right away. Or, if you want to run it without installing the dotfiles, you can use something like:
 
 ```bash
-bash -c "$(curl -fsSL "https://raw.githubusercontent.com/felipecrs/dotfiles/master/scripts/<script-name>")" -- <arguments>
+bash -c "$(curl -fsSL "https://raw.githubusercontent.com/leohteixeira/dotfiles/master/scripts/<script-name>")" -- <arguments>
 ```
 
 Just replace `<script-name>` and `<arguments>` with the desired values. Example:
 
 ```bash
-bash -c "$(curl -fsSL "https://raw.githubusercontent.com/felipecrs/dotfiles/master/scripts/create_alternative_chrome_shortcut.sh")" -- --force
+bash -c "$(curl -fsSL "https://raw.githubusercontent.com/leohteixeira/dotfiles/master/scripts/create_alternative_chrome_shortcut.sh")" -- --force
 ```
 
 ### [`create_alternative_chrome_shortcut.sh`](scripts/create_alternative_chrome_shortcut.sh)
@@ -155,7 +155,7 @@ different user data directory. This lets you have different icons for different
 instances of Google Chrome.
 
 Please check the following URL for more information:
-  https://github.com/felipecrs/dotfiles#create_alternative_chrome_shortcutsh
+  https://github.com/leohteixeira/dotfiles#create_alternative_chrome_shortcutsh
 ```
 
 #### Examples
